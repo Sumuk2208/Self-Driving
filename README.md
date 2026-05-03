@@ -26,7 +26,7 @@ Self-Driving/
 │
 ├── Course2_State_Estimation/
 │   ├── EKF_Demo.ipynb                        # EKF demo (bearing angle, car + landmark)
-│   ├── LIDAR localization.ipynb
+│   ├──assg_learner.ipynb                     #LIDAR Localization
 │   └── ...
 │
 ├── Course1_Intro/
