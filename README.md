@@ -10,12 +10,12 @@ The specialization consists of **4 courses**:
 
 | # | Course | Status |
 |---|--------|--------|
-| 1 | Introduction to Self-Driving Cars | ⬜ Yet to Add files|
-| 2 | State Estimation and Localization for Self-Driving Cars | 🔄 In Progress |
-| 3 | Visual Perception for Self-Driving Cars | ⬜ Not Started |
-| 4 | Motion Planning for Self-Driving Cars | ⬜ Not Started |
+| 1 | Introduction to Self-Driving Cars | Not Started |
+| 2 | State Estimation and Localization for Self-Driving Cars | In Progress |
+| 3 | Visual Perception for Self-Driving Cars | Not Started |
+| 4 | Motion Planning for Self-Driving Cars | Not Started |
 
-> Update the status column as you progress: ⬜ Not Started → 🔄 In Progress → ✅ Complete
+> Update the status column as you progress: Not Started → In Progress → Complete
 
 ---
 
@@ -25,7 +25,8 @@ The specialization consists of **4 courses**:
 Self-Driving/
 │
 ├── Course2_State_Estimation/
-│   ├── EKF_Demo.ipynb          # Extended Kalman Filter demo (EKF)
+│   ├── EKF_Demo.ipynb                        # EKF demo (bearing angle, car + landmark)
+│   ├── LIDAR localization.ipynb
 │   └── ...
 │
 ├── Course1_Intro/
@@ -54,11 +55,18 @@ Topics covered and work done:
 | Module 2 | Linear & Nonlinear Kalman Filters (KF, EKF, UKF) | [`EKF_Demo.ipynb`](Course2_State_Estimation/EKF_Demo.ipynb) |
 | Module 3 | GNSS/INS Sensing & Pose Estimation | — |
 | Module 4 | LIDAR Sensing & Point Clouds | — |
-| Module 5 | Full State Estimator (Final Project) | — |
+| Module 5 | Full State Estimator (Final Project) | [`Course2_EKF_LIDAR_Localization.ipynb`](Course2_State_Estimation/Course2_EKF_LIDAR_Localization.ipynb) |
+
+### Assignment — EKF LIDAR Localization
+Implementation of an Extended Kalman Filter to localize a vehicle using LIDAR range and bearing measurements to known landmarks. Covers:
+- Nonlinear motion model with odometry inputs
+- LIDAR measurement model (range + bearing)
+- EKF prediction and update steps
+- Jacobian derivations for F, L, H, M
 
 ---
 
-## 🛠️ Tools & Libraries
+## Tools & Libraries
 
 - Python 3.x
 - NumPy
